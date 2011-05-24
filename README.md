@@ -4,6 +4,8 @@ This fork is meant to work with [acts-as-taggable-on](https://github.com/mbleigh
 
 **IT USES TAG NAMES not IDs** and should work with <%= f.text_field :tag_list %>
 
+**I have found my changes to be slightly buggy at times...**
+
 
 jQuery Tokeninput: A Tokenizing Autocomplete Text Entry
 =======================================================
