@@ -1,6 +1,8 @@
+**Not tested, could use some help to stabilize**
+
 This fork is meant to work with [acts-as-taggable-on](https://github.com/mbleigh/acts-as-taggable-on) and creates new tags if they aren't found.
 
-*IT USES TAG NAMES just like the usual :tag_list text field in a hidden field, not IDs.*
+**IT USES TAG NAMES not IDs** and should work with <%= f.text_field :tag_list %>
 
 
 jQuery Tokeninput: A Tokenizing Autocomplete Text Entry
