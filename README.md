@@ -6,6 +6,8 @@ This fork is meant to work with [acts-as-taggable-on](https://github.com/mbleigh
 
 **I have found my changes to be slightly buggy at times...**
 
+Example implementation with acts as taggable: https://gist.github.com/988968
+
 
 jQuery Tokeninput: A Tokenizing Autocomplete Text Entry
 =======================================================
