@@ -284,6 +284,7 @@ $.TokenList = function (input, url_or_data, settings) {
                     return false;
                   } else {
                     name = $('.token-input-input-token-facebook > tester').text().replace(',','')
+                    if(!$.trim(name).length) return false;
 										value = {
 											name: name,
 											id: name
