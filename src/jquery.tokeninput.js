@@ -284,18 +284,18 @@ $.TokenList = function (input, url_or_data, settings) {
                     return false;
                   } else {
                     name = $('.token-input-input-token-facebook > tester').text().replace(',','')
-                    if(!$.trim(name).length) return false;
-										value = {
-											name: name,
-											id: name
-										}
-																				
-										insert_token(value);
-										
-										$('.token-input-input-token-facebook > input').val('')
-										
-										return false;
-									}
+                      if(!$.trim(name).length) return false;
+                      value = {
+                          name: name,
+                          id: name
+                      }
+
+                      insert_token(value);
+
+                      $('.token-input-input-token-facebook > input').val('')
+
+                      return false;
+                  }
                   break;
 
                 case KEY.ESCAPE:
@@ -663,7 +663,7 @@ $.TokenList = function (input, url_or_data, settings) {
         var token_values = $.map(saved_tokens, function (el) {
             if(typeof settings.tokenValue == 'function')
               return settings.tokenValue.call(this, el);
-            
+
             return el[settings.tokenValue];
         });
         hidden_input.val(token_values.join(settings.tokenDelimiter));
@@ -874,7 +874,7 @@ $.TokenList = function (input, url_or_data, settings) {
     // Bring browser focus to the specified object.
     // Use of setTimeout is to get around an IE bug.
     // (See, e.g., http://stackoverflow.com/questions/2600186/focus-doesnt-work-in-ie)
-    // 
+    //
     // obj: a jQuery object to focus()
     function focus_with_timeout(obj) {
         setTimeout(function() { obj.focus(); }, 50);
